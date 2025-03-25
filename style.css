@@ -1,0 +1,391 @@
+@import ".//bootstrap.min.css";
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.hero-section {
+  background-size: cover;
+  background-position: center;
+  height: 100dvh;
+  display: flex;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.696),
+      transparent 40%
+    ),
+    linear-gradient(to top, rgba(0, 0, 0, 0.696), transparent 40%),
+    url("../img/hero.png");
+}
+
+.hero-section .container {
+  position: relative;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.navbar-menu {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.navbar-menu .navbar-item {
+  text-decoration: none;
+  color: white;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+}
+
+.navbar-menu .navbar-item:hover {
+  color: #ffab5b;
+}
+
+.hero-section .container .hero-title {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 20px;
+}
+
+.hero-section .container .hero-title h1 {
+  color: white;
+  font-family: "Inknut Antiqua";
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 120%;
+  letter-spacing: 0%;
+}
+.hero-section .container .hero-title p {
+  font-family: "Plus Jakarta Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: white;
+}
+
+.hero-section .container .hero-title button,
+.section-visit button {
+  border-radius: 50px;
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 14px;
+  color: white;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  background-color: #ffab5b;
+  border-radius: 14px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+.hero-section .container .hero-title button:hover,
+.section-visit button:hover {
+  background-color: transparent;
+  outline-color: #d7904e;
+  border: 1px solid #d7904e;
+  color: #d7904e;
+}
+
+.hero-section .container .hero-title button:focus,
+.section-visit button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.preview-section {
+  background-color: #003092;
+  color: #ffab5b;
+  font-size: 16px;
+  text-transform: uppercase;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.list-preview {
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.item-preview {
+  flex: 0 0 auto;
+  padding: 5px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-quesion {
+  height: 100dvh;
+  background-color: white;
+}
+
+.section-quesion h1 {
+  font-family: "Inknut Antiqua";
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: #ffab5b;
+}
+
+.highlight {
+  background-color: #003092 !important;
+  border-radius: 2em;
+  color: white !important;
+}
+
+.section-quesion h4 {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: #212121;
+}
+
+.section-quesion ul li {
+  font-family: "Plus Jakarta Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: 0%;
+}
+
+.section-benefit {
+  height: 100dvh;
+  background-image: url("../img/bg-benefit.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.section-benefit h1 {
+  font-family: "Inknut Antiqua";
+  font-weight: 400;
+  font-size: 3em;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #ffab5b;
+  margin-bottom: 1em;
+}
+
+.section-benefit .card-header {
+  background-color: white;
+  border-bottom: 0;
+  border-radius: 12px;
+}
+
+.section-benefit .card-header .title {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0%;
+}
+
+.section-benefit .card {
+  border-radius: 12px;
+}
+.section-theysay {
+  height: 100dvh;
+  font-family: "Plus Jakarta Sans";
+  background-image: linear-gradient(to bottom, #ccd7f300 0%, #667ecc 100%),
+    url("../img/theysay4.png");
+  background-size: auto;
+  background-position: center calc(100% + 60px);
+  background-repeat: repeat-x;
+}
+
+.section-theysay h1 {
+  color: white;
+  font-family: "Inknut Antiqua";
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 120%;
+  text-align: center;
+}
+
+.section-theysay .card-body {
+  border-radius: 110px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-theysay .col-md-4,
+.section-theysay .col-md-6 {
+  display: flex;
+  margin-bottom: 1em;
+}
+
+.section-theysay .card-body {
+  flex-grow: 1;
+}
+
+.section-theysay p {
+  font-family: "Plus Jakarta Sans";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 120%;
+  margin-bottom: 0.5rem;
+}
+
+.section-theysay h4 {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: #003092;
+}
+
+.section-theysay img {
+  margin-right: 1em;
+}
+
+.section-theysay .avatar {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.section-faq {
+  height: 100dvh;
+}
+
+.section-faq .title {
+  color: #003092;
+  font-family: "Inknut Antiqua";
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.btn-faq {
+  border: none !important;
+  background-color: transparent !important;
+  color: #003092 !important;
+  font-size: 1.5rem !important;
+}
+
+.btn-faq:focus {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.the-answer {
+  display: none; /* Default disembunyikan */
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+.active + .the-answer {
+  display: block;
+  opacity: 1;
+  max-height: 200px; /* Sesuaikan dengan tinggi maksimum jawaban */
+}
+
+.the-answer {
+  color: #667ecc;
+  font-family: "Manrope";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0%;
+}
+
+.section-visit {
+  height: 70dvh;
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.696),
+      transparent 40%
+    ),
+    url("../img/bg-visit.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.section-visit h1 {
+  color: white;
+  font-family: "Inknut Antiqua";
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 120%;
+  letter-spacing: 0%;
+}
+
+.section-visit p {
+  font-family: "Plus Jakarta Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: #fff2db;
+}
+
+.section-footer {
+  height: 70dvh;
+  background: #003092;
+}
+
+.section-footer .row {
+  padding-top: 5%;
+  color: white;
+}
+
+.section-footer .col-md-4 {
+  padding: 3%;
+}
+
+.section-footer h5 {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  margin-bottom: 5%;
+}
+
+.section-footer p {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 12px;
+}
+
+.section-footer a {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 12px;
+  text-decoration: none;
+  color: white;
+  margin-bottom: 5%;
+}
+
+.section-footer input {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 12px;
+  text-decoration: none;
+  margin-bottom: 5%;
+}
+
+.subscribe {
+  border-radius: 110px;
+}
